@@ -1,7 +1,7 @@
 import express from 'express';
-import dbConfig from './config';
-import middlewares from './config/middlewares';
-import Routes from './routes';
+import dbConfig from './config/index.mjs';
+import middlewares from './config/middlewares.mjs';
+import Routes from './routes/index.mjs';
 
 const app = express();
 

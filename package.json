@@ -5,16 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run build && node dist/server.js",
+    "start": "nodemon --experimental-modules server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/runtime": "^7.1.2",
-    "rimraf": "^2.6.2"
+    "nodemon": "^1.19.1"
   },
   "author": "Anshuman Bhardwaj <anshu5074@gmail.com> (https://anshuman71.github.com/goodtogo71)",
   "license": "MIT",

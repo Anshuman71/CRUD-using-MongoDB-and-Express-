@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import config from './dbConfig';
+import config from './dbConfig.mjs';
 
 export default () => {
   mongoose.Promise = global.Promise;

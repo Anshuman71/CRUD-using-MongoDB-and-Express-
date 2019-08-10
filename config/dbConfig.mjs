@@ -1,5 +1,5 @@
 const devConfig = {
-  DB_URL: 'mongodb://localhost/test',
+  DB_URL: 'mongodb://localhost/kmvAttendance',
 };
 
 export default devConfig;
